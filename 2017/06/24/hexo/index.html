@@ -5,16 +5,16 @@
   
   <title>hexo 搭建个人博客 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="环境准备 node.js 安装ok [blogname].github.io 博客库创建ok  安装 Hexonpm install hexo-cli -g hexo init blog cd blog npm install hexo server 打开本地 http://localhost:4000/ 查看效果 将 Hexo 博客推送到 Github 仓库上">
+  <meta name="description" content="环境准备 node.js 安装ok [blogname].github.io 博客库创建ok  安装 Hexonpm install hexo-cli -g hexo init blog cd blog npm install hexo 常用操作生成hexo g 本地 http://localhost:4000/ 查看站点hexo s 部署hexo d 合并以上两条命令，在部署前生成hexo d">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo 搭建个人博客">
 <meta property="og:url" content="http://yoursite.com/2017/06/24/hexo/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="环境准备 node.js 安装ok [blogname].github.io 博客库创建ok  安装 Hexonpm install hexo-cli -g hexo init blog cd blog npm install hexo server 打开本地 http://localhost:4000/ 查看效果 将 Hexo 博客推送到 Github 仓库上">
-<meta property="og:updated_time" content="2017-06-23T23:30:35.215Z">
+<meta property="og:description" content="环境准备 node.js 安装ok [blogname].github.io 博客库创建ok  安装 Hexonpm install hexo-cli -g hexo init blog cd blog npm install hexo 常用操作生成hexo g 本地 http://localhost:4000/ 查看站点hexo s 部署hexo d 合并以上两条命令，在部署前生成hexo d">
+<meta property="og:updated_time" content="2017-06-23T23:49:14.694Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo 搭建个人博客">
-<meta name="twitter:description" content="环境准备 node.js 安装ok [blogname].github.io 博客库创建ok  安装 Hexonpm install hexo-cli -g hexo init blog cd blog npm install hexo server 打开本地 http://localhost:4000/ 查看效果 将 Hexo 博客推送到 Github 仓库上">
+<meta name="twitter:description" content="环境准备 node.js 安装ok [blogname].github.io 博客库创建ok  安装 Hexonpm install hexo-cli -g hexo init blog cd blog npm install hexo 常用操作生成hexo g 本地 http://localhost:4000/ 查看站点hexo s 部署hexo d 合并以上两条命令，在部署前生成hexo d">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -93,13 +93,22 @@
 hexo init blog
 cd blog
 npm install
-hexo server
-</code></pre><p>打开本地 <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> 查看效果</p>
-<h2 id="将-Hexo-博客推送到-Github-仓库上"><a href="#将-Hexo-博客推送到-Github-仓库上" class="headerlink" title="将 Hexo 博客推送到 Github 仓库上"></a>将 Hexo 博客推送到 Github 仓库上</h2>
+</code></pre><h2 id="hexo-常用操作"><a href="#hexo-常用操作" class="headerlink" title="hexo 常用操作"></a>hexo 常用操作</h2><h3 id="生成"><a href="#生成" class="headerlink" title="生成"></a>生成</h3><pre><code>hexo g
+</code></pre><h3 id="本地-http-localhost-4000-查看站点"><a href="#本地-http-localhost-4000-查看站点" class="headerlink" title="本地 http://localhost:4000/ 查看站点"></a>本地 <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> 查看站点</h3><pre><code>hexo s
+</code></pre><h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><pre><code>hexo d
+</code></pre><h3 id="合并以上两条命令，在部署前生成"><a href="#合并以上两条命令，在部署前生成" class="headerlink" title="合并以上两条命令，在部署前生成"></a>合并以上两条命令，在部署前生成</h3><pre><code>hexo d -g
+</code></pre><h2 id="将-Hexo-博客推送到-Github-仓库上"><a href="#将-Hexo-博客推送到-Github-仓库上" class="headerlink" title="将 Hexo 博客推送到 Github 仓库上"></a>将 Hexo 博客推送到 Github 仓库上</h2><h3 id="安装推送扩展"><a href="#安装推送扩展" class="headerlink" title="安装推送扩展"></a>安装推送扩展</h3><pre><code>npm install hexo-deployer-git --save
+</code></pre><h3 id="配置-config-yuml-文件推送方式和地址"><a href="#配置-config-yuml-文件推送方式和地址" class="headerlink" title="配置 _config.yuml 文件推送方式和地址"></a>配置 _config.yuml 文件推送方式和地址</h3><pre><code>deploy:
+  type: git
+  repo: git@github.com:kuangggg/kuanggg.github.io.git
+  branch: master
+</code></pre><h2 id="文章创建"><a href="#文章创建" class="headerlink" title="文章创建"></a>文章创建</h2><pre><code>hexo new post &quot;article title&quot;
+</code></pre><p>在 source\ _posts 将会看到 article title.md 文件，对其进行修改编辑，然后生成发布即可。</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/06/24/hexo/" data-id="cj4ahi9jl0001l8qkhqy20nlt" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/06/24/hexo/" data-id="cj4aidhx40000l0qkgtq514p7" class="article-share-link">Share</a>
       
       
     </footer>
@@ -153,10 +162,6 @@ hexo server
         
           <li>
             <a href="/2017/06/24/sublime/">sublime</a>
-          </li>
-        
-          <li>
-            <a href="/2017/06/24/hello-world/">Hello World</a>
           </li>
         
       </ul>
