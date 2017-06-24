@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="kuan's blog" />
+  <meta name="keywords" content="git," />
 
 
 
@@ -93,16 +93,17 @@
 
 
 
-<meta name="description" content="下载 composer.phar新建 composer.bat 文件@php &amp;quot;%~dp0composer.phar&amp;quot; %* 将两个文件置于同一文件夹下面，添加到环境变量中,我的添加在PHP文件夹中 xampp/php/指向中国全量镜像composer config -g repo.packagist composer https://packagist.phpcomposer">
+<meta name="description" content="下载 git 客户端命令行参考 创建SSH KEYssh-keygen -t rsa -C &amp;quot;[your email]&amp;quot; 在 C:\Users\Administrator.ssh 目录下生成id_rsa和id_rsa.pub两个文件    ssh -T git@github.com //校验秘钥 github 上添加私钥登陆GitHub，打开“Account settings”">
+<meta name="keywords" content="git">
 <meta property="og:type" content="article">
-<meta property="og:title" content="composer">
-<meta property="og:url" content="http://yoursite.com/2017/06/24/composer/index.html">
+<meta property="og:title" content="Git">
+<meta property="og:url" content="http://yoursite.com/2017/06/24/git/index.html">
 <meta property="og:site_name" content="kuangggg&#39;s blog">
-<meta property="og:description" content="下载 composer.phar新建 composer.bat 文件@php &amp;quot;%~dp0composer.phar&amp;quot; %* 将两个文件置于同一文件夹下面，添加到环境变量中,我的添加在PHP文件夹中 xampp/php/指向中国全量镜像composer config -g repo.packagist composer https://packagist.phpcomposer">
-<meta property="og:updated_time" content="2017-06-24T00:56:30.815Z">
+<meta property="og:description" content="下载 git 客户端命令行参考 创建SSH KEYssh-keygen -t rsa -C &amp;quot;[your email]&amp;quot; 在 C:\Users\Administrator.ssh 目录下生成id_rsa和id_rsa.pub两个文件    ssh -T git@github.com //校验秘钥 github 上添加私钥登陆GitHub，打开“Account settings”">
+<meta property="og:updated_time" content="2017-06-24T06:08:42.768Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="composer">
-<meta name="twitter:description" content="下载 composer.phar新建 composer.bat 文件@php &amp;quot;%~dp0composer.phar&amp;quot; %* 将两个文件置于同一文件夹下面，添加到环境变量中,我的添加在PHP文件夹中 xampp/php/指向中国全量镜像composer config -g repo.packagist composer https://packagist.phpcomposer">
+<meta name="twitter:title" content="Git">
+<meta name="twitter:description" content="下载 git 客户端命令行参考 创建SSH KEYssh-keygen -t rsa -C &amp;quot;[your email]&amp;quot; 在 C:\Users\Administrator.ssh 目录下生成id_rsa和id_rsa.pub两个文件    ssh -T git@github.com //校验秘钥 github 上添加私钥登陆GitHub，打开“Account settings”">
 
 
 
@@ -130,13 +131,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/06/24/composer/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/06/24/git/"/>
 
 
 
 
 
-  <title>composer | kuangggg's blog</title>
+  <title>Git | kuangggg's blog</title>
   
 
 
@@ -245,7 +246,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/24/composer/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/24/git/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="kuangggg">
@@ -262,7 +263,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">composer</h1>
+          <h1 class="post-title" itemprop="name headline">Git</h1>
         
 
         <div class="post-meta">
@@ -274,7 +275,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-24T08:55:23+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-24T14:04:44+08:00">
                 2017-06-24
               </time>
             
@@ -284,6 +285,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tool/" itemprop="url" rel="index">
+                    <span itemprop="name">tool</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -309,10 +332,26 @@
       
 
       
-        <h3 id="下载-composer-phar"><a href="#下载-composer-phar" class="headerlink" title="下载 composer.phar"></a>下载 <a href="https://getcomposer.org/composer.phar" target="_blank" rel="external">composer.phar</a></h3><h3 id="新建-composer-bat-文件"><a href="#新建-composer-bat-文件" class="headerlink" title="新建 composer.bat 文件"></a>新建 composer.bat 文件</h3><p><code>@php &quot;%~dp0composer.phar&quot; %*</code></p>
-<h3 id="将两个文件置于同一文件夹下面，添加到环境变量中-我的添加在PHP文件夹中-xampp-php"><a href="#将两个文件置于同一文件夹下面，添加到环境变量中-我的添加在PHP文件夹中-xampp-php" class="headerlink" title="将两个文件置于同一文件夹下面，添加到环境变量中,我的添加在PHP文件夹中 xampp/php/"></a>将两个文件置于同一文件夹下面，添加到环境变量中,我的添加在PHP文件夹中 xampp/php/</h3><h3 id="指向中国全量镜像"><a href="#指向中国全量镜像" class="headerlink" title="指向中国全量镜像"></a>指向中国全量镜像</h3><p><code>composer config -g repo.packagist composer https://packagist.phpcomposer.com</code></p>
-<h3 id="查看全局配置"><a href="#查看全局配置" class="headerlink" title="查看全局配置"></a>查看全局配置</h3><p><code>composer config -gl repo.packagist</code></p>
-
+        <h2 id="下载-git-客户端"><a href="#下载-git-客户端" class="headerlink" title="下载 git 客户端"></a>下载 git 客户端</h2><p><a href="https://git-scm.com/docs" target="_blank" rel="external">命令行参考</a></p>
+<h2 id="创建SSH-KEY"><a href="#创建SSH-KEY" class="headerlink" title="创建SSH KEY"></a>创建SSH KEY</h2><pre><code>ssh-keygen -t rsa -C &quot;[your email]&quot;
+</code></pre><p>在 <strong>C:\Users\Administrator.ssh</strong> 目录下生成id_rsa和id_rsa.pub两个文件<br>    ssh -T git@github.com //校验秘钥</p>
+<h2 id="github-上添加私钥"><a href="#github-上添加私钥" class="headerlink" title="github 上添加私钥"></a>github 上添加私钥</h2><p>登陆GitHub，打开“Account settings”，“SSH Keys”页面,点“Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容</p>
+<h2 id="全局配置账户信息"><a href="#全局配置账户信息" class="headerlink" title="全局配置账户信息"></a>全局配置账户信息</h2><pre><code>git config --global user.name kuangggg
+git config --global user.email [your email]
+</code></pre><h2 id="初次体验"><a href="#初次体验" class="headerlink" title="初次体验"></a>初次体验</h2><pre><code>git init //初始化一个本地仓库
+git add //从工作区加载到缓存库中
+git commit -m &quot;提示信息&quot;
+git remote add origin git@github.com:kuangggg/kuangggg.github.io.git //将本地这个库和 github 上的库关联
+git push -u origin master //推送到远程库主分支 第一次提交-u
+</code></pre><h2 id="提交修改"><a href="#提交修改" class="headerlink" title="提交修改"></a>提交修改</h2><pre><code>git status  //查看状态
+git diff file.txt  //查看修改
+git add //提交修改
+git push origin master  //推送
+</code></pre><h2 id="分支相关"><a href="#分支相关" class="headerlink" title="分支相关"></a>分支相关</h2><pre><code>git chechout -b dev  //创建dev分支，然后切换到dev分支
+git branch //查看当前分支
+git merge name //合并某分支到当前分支
+git branch -d name //删除分支
+</code></pre>
       
     </div>
 
@@ -339,6 +378,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/git/" rel="tag"># git</a>
+          
+        </div>
+      
 
       
       
@@ -348,8 +393,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/06/24/hexo/" rel="next" title="hexo 搭建个人博客">
-                <i class="fa fa-chevron-left"></i> hexo 搭建个人博客
+              <a href="/2017/06/24/composer/" rel="next" title="composer">
+                <i class="fa fa-chevron-left"></i> composer
               </a>
             
           </div>
@@ -358,8 +403,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/06/24/git/" rel="prev" title="Git">
-                Git <i class="fa fa-chevron-right"></i>
+              <a href="/2017/06/24/README/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -489,7 +534,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载-composer-phar"><span class="nav-number">1.</span> <span class="nav-text">下载 composer.phar</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#新建-composer-bat-文件"><span class="nav-number">2.</span> <span class="nav-text">新建 composer.bat 文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#将两个文件置于同一文件夹下面，添加到环境变量中-我的添加在PHP文件夹中-xampp-php"><span class="nav-number">3.</span> <span class="nav-text">将两个文件置于同一文件夹下面，添加到环境变量中,我的添加在PHP文件夹中 xampp/php/</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#指向中国全量镜像"><span class="nav-number">4.</span> <span class="nav-text">指向中国全量镜像</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查看全局配置"><span class="nav-number">5.</span> <span class="nav-text">查看全局配置</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#下载-git-客户端"><span class="nav-number">1.</span> <span class="nav-text">下载 git 客户端</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建SSH-KEY"><span class="nav-number">2.</span> <span class="nav-text">创建SSH KEY</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#github-上添加私钥"><span class="nav-number">3.</span> <span class="nav-text">github 上添加私钥</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#全局配置账户信息"><span class="nav-number">4.</span> <span class="nav-text">全局配置账户信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初次体验"><span class="nav-number">5.</span> <span class="nav-text">初次体验</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#提交修改"><span class="nav-number">6.</span> <span class="nav-text">提交修改</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分支相关"><span class="nav-number">7.</span> <span class="nav-text">分支相关</span></a></li></ol></div>
             
 
           </div>
