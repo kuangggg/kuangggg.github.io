@@ -3,9 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <title>tool</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+
+    <script src="js/vue.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-<h1>我的工具测试页</h1>
+<h2 class="text-center">Tool</h2>
+<div id="app">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        微博文章头生成器
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <label for="">标题</label>
+                            <input type="text" class="form-control" v-model="title">
+                        </div>
+                        <div class="form-group">
+                            <label for="">时间</label>
+                            <input type="text" class="form-control" v-model="date" id="date">
+                        </div>
+                        <div class="form-group">
+                            <label for="">分类</label>
+                            <input type="text" class="form-control" v-model="cate">
+                        </div>
+                        <div class="form-group">
+                            <label for="">标签</label>
+                            <input type="text" class="form-control" v-model="tags">
+                        </div>
+                        <div class="form-group">
+                            <label for="">输出</label>
+                            <textarea name="" id="" cols="30" rows="8" class="form-control" readonly v-model="result"></textarea>
+                        </div>
+                        <button class="btn btn-default" @click="generate">生成</button>
+                    </div>
+                </div>
+            </div>
+ 
+        </div>
+    </div>
+</div>
+
+
+
     
 </body>
+<script>
+
+new Vue({
+    el: '#app',
+    data: {
+        title: '',
+        date: '',
+        cate: '',
+        tags: '',
+        result: '',
+    },
+    methods: {
+        generate () {
+            this.result = `
+---
+title: ${this.title}
+date: ${this.date} 
+categories: ${this.cate}
+tags: ${this.tags}
+---
+`;
+        },
+    },
+});
+
+</script>
 </html>
