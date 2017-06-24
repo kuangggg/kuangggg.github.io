@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="hexo blog," />
+  <meta name="keywords" content="hexo," />
 
 
 
@@ -94,13 +94,13 @@
 
 
 <meta name="description" content="环境准备 node.js 安装ok [blogname].github.io 博客库创建ok  安装 Hexonpm install hexo-cli -g hexo init blog cd blog npm install hexo 常用操作生成hexo g 本地 http://localhost:4000/ 查看站点hexo s 部署hexo d 合并以上两条命令，在部署前生成hexo d">
-<meta name="keywords" content="hexo blog">
+<meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo 搭建个人博客">
 <meta property="og:url" content="http://yoursite.com/2017/06/24/hexo/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="环境准备 node.js 安装ok [blogname].github.io 博客库创建ok  安装 Hexonpm install hexo-cli -g hexo init blog cd blog npm install hexo 常用操作生成hexo g 本地 http://localhost:4000/ 查看站点hexo s 部署hexo d 合并以上两条命令，在部署前生成hexo d">
-<meta property="og:updated_time" content="2017-06-24T00:10:04.196Z">
+<meta property="og:updated_time" content="2017-06-24T00:17:26.068Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo 搭建个人博客">
 <meta name="twitter:description" content="环境准备 node.js 安装ok [blogname].github.io 博客库创建ok  安装 Hexonpm install hexo-cli -g hexo init blog cd blog npm install hexo 常用操作生成hexo g 本地 http://localhost:4000/ 查看站点hexo s 部署hexo d 合并以上两条命令，在部署前生成hexo d">
@@ -328,21 +328,21 @@
 hexo init blog
 cd blog
 npm install
-</code></pre><h2 id="hexo-常用操作"><a href="#hexo-常用操作" class="headerlink" title="hexo 常用操作"></a>hexo 常用操作</h2><h3 id="生成"><a href="#生成" class="headerlink" title="生成"></a>生成</h3><pre><code>hexo g
-</code></pre><h3 id="本地-http-localhost-4000-查看站点"><a href="#本地-http-localhost-4000-查看站点" class="headerlink" title="本地 http://localhost:4000/ 查看站点"></a>本地 <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> 查看站点</h3><pre><code>hexo s
-</code></pre><h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><pre><code>hexo d
-</code></pre><h3 id="合并以上两条命令，在部署前生成"><a href="#合并以上两条命令，在部署前生成" class="headerlink" title="合并以上两条命令，在部署前生成"></a>合并以上两条命令，在部署前生成</h3><pre><code>hexo d -g
-</code></pre><h2 id="将-Hexo-博客推送到-Github-仓库上"><a href="#将-Hexo-博客推送到-Github-仓库上" class="headerlink" title="将 Hexo 博客推送到 Github 仓库上"></a>将 Hexo 博客推送到 Github 仓库上</h2><h3 id="安装推送扩展"><a href="#安装推送扩展" class="headerlink" title="安装推送扩展"></a>安装推送扩展</h3><pre><code>npm install hexo-deployer-git --save
-</code></pre><h3 id="配置-config-yuml-文件推送方式和地址"><a href="#配置-config-yuml-文件推送方式和地址" class="headerlink" title="配置 _config.yuml 文件推送方式和地址"></a>配置 _config.yuml 文件推送方式和地址</h3><pre><code>deploy:
+</code></pre><h2 id="hexo-常用操作"><a href="#hexo-常用操作" class="headerlink" title="hexo 常用操作"></a>hexo 常用操作</h2><h4 id="生成"><a href="#生成" class="headerlink" title="生成"></a>生成</h4><pre><code>hexo g
+</code></pre><h4 id="本地-http-localhost-4000-查看站点"><a href="#本地-http-localhost-4000-查看站点" class="headerlink" title="本地 http://localhost:4000/ 查看站点"></a>本地 <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> 查看站点</h4><pre><code>hexo s
+</code></pre><h4 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h4><pre><code>hexo d
+</code></pre><h4 id="合并以上两条命令，在部署前生成"><a href="#合并以上两条命令，在部署前生成" class="headerlink" title="合并以上两条命令，在部署前生成"></a>合并以上两条命令，在部署前生成</h4><pre><code>hexo d -g
+</code></pre><h2 id="将-Hexo-博客推送到-Github-仓库上"><a href="#将-Hexo-博客推送到-Github-仓库上" class="headerlink" title="将 Hexo 博客推送到 Github 仓库上"></a>将 Hexo 博客推送到 Github 仓库上</h2><h4 id="安装推送扩展"><a href="#安装推送扩展" class="headerlink" title="安装推送扩展"></a>安装推送扩展</h4><pre><code>npm install hexo-deployer-git --save
+</code></pre><h4 id="配置-config-yuml-文件推送方式和地址"><a href="#配置-config-yuml-文件推送方式和地址" class="headerlink" title="配置 _config.yuml 文件推送方式和地址"></a>配置 _config.yuml 文件推送方式和地址</h4><pre><code>deploy:
   type: git
   repo: git@github.com:kuangggg/kuanggg.github.io.git
   branch: master
 </code></pre><h2 id="文章创建"><a href="#文章创建" class="headerlink" title="文章创建"></a>文章创建</h2><pre><code>hexo new post &quot;article title&quot;
 </code></pre><p>在 source\ _posts 将会看到 article title.md 文件，对其进行修改编辑，然后生成发布即可。</p>
-<h2 id="安装next主题"><a href="#安装next主题" class="headerlink" title="安装next主题"></a>安装next主题</h2><h3 id="下载主题"><a href="#下载主题" class="headerlink" title="下载主题"></a>下载主题</h3><p>  git clone <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">https://github.com/iissnan/hexo-theme-next</a> themes/next</p>
-<h3 id="修改默认主题配置"><a href="#修改默认主题配置" class="headerlink" title="修改默认主题配置"></a>修改默认主题配置</h3><p>  theme: next</p>
-<h3 id="清楚原有主题缓存"><a href="#清楚原有主题缓存" class="headerlink" title="清楚原有主题缓存"></a>清楚原有主题缓存</h3><p>  hexo clean</p>
-
+<h2 id="安装next主题"><a href="#安装next主题" class="headerlink" title="安装next主题"></a>安装next主题</h2><h4 id="下载主题"><a href="#下载主题" class="headerlink" title="下载主题"></a>下载主题</h4><pre><code>git clone https://github.com/iissnan/hexo-theme-next themes/next
+</code></pre><h4 id="修改默认主题配置"><a href="#修改默认主题配置" class="headerlink" title="修改默认主题配置"></a>修改默认主题配置</h4><pre><code>theme: next
+</code></pre><h4 id="清楚原有主题缓存"><a href="#清楚原有主题缓存" class="headerlink" title="清楚原有主题缓存"></a>清楚原有主题缓存</h4><pre><code>hexo clean
+</code></pre>
       
     </div>
 
@@ -371,7 +371,7 @@ npm install
       
         <div class="post-tags">
           
-            <a href="/tags/hexo-blog/" rel="tag"># hexo blog</a>
+            <a href="/tags/hexo/" rel="tag"># hexo</a>
           
         </div>
       
@@ -477,7 +477,7 @@ npm install
             
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">Tags</span>
               
             </div>
@@ -512,7 +512,7 @@ npm install
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#环境准备"><span class="nav-number">1.</span> <span class="nav-text">环境准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-Hexo"><span class="nav-number">2.</span> <span class="nav-text">安装 Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo-常用操作"><span class="nav-number">3.</span> <span class="nav-text">hexo 常用操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#生成"><span class="nav-number">3.1.</span> <span class="nav-text">生成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本地-http-localhost-4000-查看站点"><span class="nav-number">3.2.</span> <span class="nav-text">本地 http://localhost:4000/ 查看站点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部署"><span class="nav-number">3.3.</span> <span class="nav-text">部署</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#合并以上两条命令，在部署前生成"><span class="nav-number">3.4.</span> <span class="nav-text">合并以上两条命令，在部署前生成</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#将-Hexo-博客推送到-Github-仓库上"><span class="nav-number">4.</span> <span class="nav-text">将 Hexo 博客推送到 Github 仓库上</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装推送扩展"><span class="nav-number">4.1.</span> <span class="nav-text">安装推送扩展</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置-config-yuml-文件推送方式和地址"><span class="nav-number">4.2.</span> <span class="nav-text">配置 _config.yuml 文件推送方式和地址</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文章创建"><span class="nav-number">5.</span> <span class="nav-text">文章创建</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装next主题"><span class="nav-number">6.</span> <span class="nav-text">安装next主题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载主题"><span class="nav-number">6.1.</span> <span class="nav-text">下载主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改默认主题配置"><span class="nav-number">6.2.</span> <span class="nav-text">修改默认主题配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#清楚原有主题缓存"><span class="nav-number">6.3.</span> <span class="nav-text">清楚原有主题缓存</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#环境准备"><span class="nav-number">1.</span> <span class="nav-text">环境准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-Hexo"><span class="nav-number">2.</span> <span class="nav-text">安装 Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo-常用操作"><span class="nav-number">3.</span> <span class="nav-text">hexo 常用操作</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#生成"><span class="nav-number">3.0.1.</span> <span class="nav-text">生成</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#本地-http-localhost-4000-查看站点"><span class="nav-number">3.0.2.</span> <span class="nav-text">本地 http://localhost:4000/ 查看站点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#部署"><span class="nav-number">3.0.3.</span> <span class="nav-text">部署</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#合并以上两条命令，在部署前生成"><span class="nav-number">3.0.4.</span> <span class="nav-text">合并以上两条命令，在部署前生成</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#将-Hexo-博客推送到-Github-仓库上"><span class="nav-number">4.</span> <span class="nav-text">将 Hexo 博客推送到 Github 仓库上</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装推送扩展"><span class="nav-number">4.0.1.</span> <span class="nav-text">安装推送扩展</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置-config-yuml-文件推送方式和地址"><span class="nav-number">4.0.2.</span> <span class="nav-text">配置 _config.yuml 文件推送方式和地址</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文章创建"><span class="nav-number">5.</span> <span class="nav-text">文章创建</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装next主题"><span class="nav-number">6.</span> <span class="nav-text">安装next主题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#下载主题"><span class="nav-number">6.0.1.</span> <span class="nav-text">下载主题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改默认主题配置"><span class="nav-number">6.0.2.</span> <span class="nav-text">修改默认主题配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#清楚原有主题缓存"><span class="nav-number">6.0.3.</span> <span class="nav-text">清楚原有主题缓存</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>

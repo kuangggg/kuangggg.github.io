@@ -329,21 +329,21 @@
 hexo init blog
 cd blog
 npm install
-</code></pre><h2 id="hexo-常用操作"><a href="#hexo-常用操作" class="headerlink" title="hexo 常用操作"></a>hexo 常用操作</h2><h3 id="生成"><a href="#生成" class="headerlink" title="生成"></a>生成</h3><pre><code>hexo g
-</code></pre><h3 id="本地-http-localhost-4000-查看站点"><a href="#本地-http-localhost-4000-查看站点" class="headerlink" title="本地 http://localhost:4000/ 查看站点"></a>本地 <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> 查看站点</h3><pre><code>hexo s
-</code></pre><h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><pre><code>hexo d
-</code></pre><h3 id="合并以上两条命令，在部署前生成"><a href="#合并以上两条命令，在部署前生成" class="headerlink" title="合并以上两条命令，在部署前生成"></a>合并以上两条命令，在部署前生成</h3><pre><code>hexo d -g
-</code></pre><h2 id="将-Hexo-博客推送到-Github-仓库上"><a href="#将-Hexo-博客推送到-Github-仓库上" class="headerlink" title="将 Hexo 博客推送到 Github 仓库上"></a>将 Hexo 博客推送到 Github 仓库上</h2><h3 id="安装推送扩展"><a href="#安装推送扩展" class="headerlink" title="安装推送扩展"></a>安装推送扩展</h3><pre><code>npm install hexo-deployer-git --save
-</code></pre><h3 id="配置-config-yuml-文件推送方式和地址"><a href="#配置-config-yuml-文件推送方式和地址" class="headerlink" title="配置 _config.yuml 文件推送方式和地址"></a>配置 _config.yuml 文件推送方式和地址</h3><pre><code>deploy:
+</code></pre><h2 id="hexo-常用操作"><a href="#hexo-常用操作" class="headerlink" title="hexo 常用操作"></a>hexo 常用操作</h2><h4 id="生成"><a href="#生成" class="headerlink" title="生成"></a>生成</h4><pre><code>hexo g
+</code></pre><h4 id="本地-http-localhost-4000-查看站点"><a href="#本地-http-localhost-4000-查看站点" class="headerlink" title="本地 http://localhost:4000/ 查看站点"></a>本地 <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> 查看站点</h4><pre><code>hexo s
+</code></pre><h4 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h4><pre><code>hexo d
+</code></pre><h4 id="合并以上两条命令，在部署前生成"><a href="#合并以上两条命令，在部署前生成" class="headerlink" title="合并以上两条命令，在部署前生成"></a>合并以上两条命令，在部署前生成</h4><pre><code>hexo d -g
+</code></pre><h2 id="将-Hexo-博客推送到-Github-仓库上"><a href="#将-Hexo-博客推送到-Github-仓库上" class="headerlink" title="将 Hexo 博客推送到 Github 仓库上"></a>将 Hexo 博客推送到 Github 仓库上</h2><h4 id="安装推送扩展"><a href="#安装推送扩展" class="headerlink" title="安装推送扩展"></a>安装推送扩展</h4><pre><code>npm install hexo-deployer-git --save
+</code></pre><h4 id="配置-config-yuml-文件推送方式和地址"><a href="#配置-config-yuml-文件推送方式和地址" class="headerlink" title="配置 _config.yuml 文件推送方式和地址"></a>配置 _config.yuml 文件推送方式和地址</h4><pre><code>deploy:
   type: git
   repo: git@github.com:kuangggg/kuanggg.github.io.git
   branch: master
 </code></pre><h2 id="文章创建"><a href="#文章创建" class="headerlink" title="文章创建"></a>文章创建</h2><pre><code>hexo new post &quot;article title&quot;
 </code></pre><p>在 source\ _posts 将会看到 article title.md 文件，对其进行修改编辑，然后生成发布即可。</p>
-<h2 id="安装next主题"><a href="#安装next主题" class="headerlink" title="安装next主题"></a>安装next主题</h2><h3 id="下载主题"><a href="#下载主题" class="headerlink" title="下载主题"></a>下载主题</h3><p>  git clone <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">https://github.com/iissnan/hexo-theme-next</a> themes/next</p>
-<h3 id="修改默认主题配置"><a href="#修改默认主题配置" class="headerlink" title="修改默认主题配置"></a>修改默认主题配置</h3><p>  theme: next</p>
-<h3 id="清楚原有主题缓存"><a href="#清楚原有主题缓存" class="headerlink" title="清楚原有主题缓存"></a>清楚原有主题缓存</h3><p>  hexo clean</p>
-
+<h2 id="安装next主题"><a href="#安装next主题" class="headerlink" title="安装next主题"></a>安装next主题</h2><h4 id="下载主题"><a href="#下载主题" class="headerlink" title="下载主题"></a>下载主题</h4><pre><code>git clone https://github.com/iissnan/hexo-theme-next themes/next
+</code></pre><h4 id="修改默认主题配置"><a href="#修改默认主题配置" class="headerlink" title="修改默认主题配置"></a>修改默认主题配置</h4><pre><code>theme: next
+</code></pre><h4 id="清楚原有主题缓存"><a href="#清楚原有主题缓存" class="headerlink" title="清楚原有主题缓存"></a>清楚原有主题缓存</h4><pre><code>hexo clean
+</code></pre>
           
         
       
@@ -454,7 +454,33 @@ npm install
       
         
           
-            
+            <h2 id="安装-sublime-package-control包管理工具"><a href="#安装-sublime-package-control包管理工具" class="headerlink" title="安装 sublime package control包管理工具"></a>安装 <a href="http://www.sublimetext.com/docs" target="_blank" rel="external">sublime</a> <strong>package control</strong>包管理工具</h2><p>调出命令行（Ctrl + `）导入Sublime text 3的Package Control的安装代码</p>
+<p><code>import urllib2,os,hashlib; h = &#39;7183a2d3e96f11eeadd761d777e62404&#39; + &#39;e330c659d4bb41d3bdf022e94cab3cd0&#39;; pf = &#39;Package Control.sublime-package&#39;; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( &#39;http://sublime.wbond.net/&#39; + pf.replace(&#39; &#39;, &#39;%20&#39;)).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), &#39;wb&#39; ).write(by) if dh == h else None; print(&#39;Error validating download (got %s instead of %s), please try manual install&#39; % (dh, h) if dh != h else &#39;Please restart Sublime Text to finish installation&#39;)</code></p>
+<h3 id="另外提供Sublime-text-2的Package-Control的安装代码"><a href="#另外提供Sublime-text-2的Package-Control的安装代码" class="headerlink" title="另外提供Sublime text 2的Package Control的安装代码"></a>另外提供Sublime text 2的Package Control的安装代码</h3><p><code>import urllib2,os,hashlib; h = &#39;7183a2d3e96f11eeadd761d777e62404&#39; + &#39;e330c659d4bb41d3bdf022e94cab3cd0&#39;; pf = &#39;Package Control.sublime-package&#39;; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( &#39;http://sublime.wbond.net/&#39; + pf.replace(&#39; &#39;, &#39;%20&#39;)).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), &#39;wb&#39; ).write(by) if dh == h else None; print(&#39;Error validating download (got %s instead of %s), please try manual install&#39; % (dh, h) if dh != h else &#39;Please restart Sublime Text to finish installation&#39;)</code></p>
+<h2 id="常用包安装"><a href="#常用包安装" class="headerlink" title="常用包安装"></a>常用包安装</h2><ul>
+<li>Boxy Theme 主题相关</li>
+<li>DocBlockr  注释文档</li>
+<li>Emmet      前端</li>
+</ul>
+<h2 id="开启-Vim-模式"><a href="#开启-Vim-模式" class="headerlink" title="开启 Vim 模式"></a>开启 Vim 模式</h2><p>在菜单栏中： Preferences -&gt; Setting - User 即可打开配置文件进行编辑，将 ignored_packages 项的[]里面内容清空：”ignored_packages”: []</p>
+<h2 id="常用快捷键"><a href="#常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h2><ul>
+<li>Ctrl + Shift + p 打开命令窗口</li>
+<li>Ctrl + k / Ctrl + b  打开/关闭左侧工程树</li>
+<li>Ctrl + r 跳转当前页面函数名部分</li>
+<li>F11 全屏</li>
+<li>Alt + Shift + <num> 分屏</num></li>
+<li>Ctrl + Tab 打开文件之间跳转</li>
+<li><h2 id="setting-文件配置"><a href="#setting-文件配置" class="headerlink" title="setting 文件配置"></a>setting 文件配置</h2></li>
+</ul>
+<pre><code>&quot;color_scheme&quot;: &quot;Packages/Color Scheme - Default/Monokai.tmTheme&quot;,
+&quot;font_size&quot;: 13,
+&quot;ignored_packages&quot;:
+[
+],
+&quot;tab_size&quot;: 4,
+&quot;translate_tabs_to_spaces&quot;: true,
+&quot;theme&quot;: &quot;Boxy Monokai.sublime-theme&quot;,
+</code></pre>
           
         
       
@@ -546,7 +572,7 @@ npm install
             
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">Tags</span>
               
             </div>
