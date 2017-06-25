@@ -100,7 +100,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/06/25/babel/index.html">
 <meta property="og:site_name" content="kuangggg&#39;s blog">
 <meta property="og:description" content="参考 Babel 入门教程  http://babeljs.io/ babel 是什么Babel是一个广泛使用的转码器，可以将ES6代码转为ES5代码，从而在现有环境执行。 配置.babelrc 文件该文件用来设置转码规则和插件，放置在根目录下，格式如下 {     &amp;quot;presets&amp;quot;: [       &amp;quot;es2015&amp;quot;,       &amp;quot;stage">
-<meta property="og:updated_time" content="2017-06-25T14:11:23.346Z">
+<meta property="og:updated_time" content="2017-06-25T14:14:01.653Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="babel">
 <meta name="twitter:description" content="参考 Babel 入门教程  http://babeljs.io/ babel 是什么Babel是一个广泛使用的转码器，可以将ES6代码转为ES5代码，从而在现有环境执行。 配置.babelrc 文件该文件用来设置转码规则和插件，放置在根目录下，格式如下 {     &amp;quot;presets&amp;quot;: [       &amp;quot;es2015&amp;quot;,       &amp;quot;stage">
@@ -344,9 +344,10 @@
 }
 </code></pre><p>presets字段设定转码规则根据需要添加，这里只添加 es2015 和 stage-2</p>
 <h2 id="使用命令行工具-babel-cli-转码"><a href="#使用命令行工具-babel-cli-转码" class="headerlink" title="使用命令行工具 babel-cli 转码"></a>使用命令行工具 <strong>babel-cli</strong> 转码</h2><blockquote>
-<p>此处将 babel-cli 安装到项目目录下，解决了项目对全局环境的依赖<br>    cnpm install –save-dev babel-cli</p>
+<p>此处将 babel-cli 安装到项目目录下，解决了项目对全局环境的依赖</p>
 </blockquote>
-<h3 id="修改-package-json-文件"><a href="#修改-package-json-文件" class="headerlink" title="修改 package.json 文件"></a>修改 package.json 文件</h3><pre><code>{
+<pre><code>cnpm install --save-dev babel-cli
+</code></pre><h3 id="修改-package-json-文件"><a href="#修改-package-json-文件" class="headerlink" title="修改 package.json 文件"></a>修改 package.json 文件</h3><pre><code>{
   &quot;devDependencies&quot;: {
     &quot;babel-cli&quot;: &quot;^6.24.1&quot;,
     &quot;babel-preset-es2015&quot;: &quot;^6.24.1&quot;,
