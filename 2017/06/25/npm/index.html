@@ -93,17 +93,17 @@
 
 
 
-<meta name="description" content="npm 是什么npm（node package manager）是nodejs的包管理器，用于node插件管理（包括安装、卸载、管理依赖等） 使用 npm 安装插件npm install &amp;lt;name&amp;gt; [-g] [--save-dev] -g：全局安装。将会安装在C:\Users\Administrator\AppData\Roaming\npm，并且写入系统环境变量； 非全局安装：将">
+<meta name="description" content="npm 是什么npm（node package manager）是nodejs的包管理器，用于node插件管理（包括安装、卸载、管理依赖等） 使用 npm 安装插件npm install &amp;lt;name&amp;gt; [-g] [--save-dev]  –save-dev 是你开发时候依赖的东西，–save 是你发布之后还依赖的东西。举个栗子，jquery 是你开发用的，但是上限后依然依赖的。bab">
 <meta name="keywords" content="npm">
 <meta property="og:type" content="article">
 <meta property="og:title" content="npm">
 <meta property="og:url" content="http://yoursite.com/2017/06/25/npm/index.html">
 <meta property="og:site_name" content="kuangggg&#39;s blog">
-<meta property="og:description" content="npm 是什么npm（node package manager）是nodejs的包管理器，用于node插件管理（包括安装、卸载、管理依赖等） 使用 npm 安装插件npm install &amp;lt;name&amp;gt; [-g] [--save-dev] -g：全局安装。将会安装在C:\Users\Administrator\AppData\Roaming\npm，并且写入系统环境变量； 非全局安装：将">
-<meta property="og:updated_time" content="2017-06-25T14:26:29.038Z">
+<meta property="og:description" content="npm 是什么npm（node package manager）是nodejs的包管理器，用于node插件管理（包括安装、卸载、管理依赖等） 使用 npm 安装插件npm install &amp;lt;name&amp;gt; [-g] [--save-dev]  –save-dev 是你开发时候依赖的东西，–save 是你发布之后还依赖的东西。举个栗子，jquery 是你开发用的，但是上限后依然依赖的。bab">
+<meta property="og:updated_time" content="2017-06-28T09:36:53.925Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="npm">
-<meta name="twitter:description" content="npm 是什么npm（node package manager）是nodejs的包管理器，用于node插件管理（包括安装、卸载、管理依赖等） 使用 npm 安装插件npm install &amp;lt;name&amp;gt; [-g] [--save-dev] -g：全局安装。将会安装在C:\Users\Administrator\AppData\Roaming\npm，并且写入系统环境变量； 非全局安装：将">
+<meta name="twitter:description" content="npm 是什么npm（node package manager）是nodejs的包管理器，用于node插件管理（包括安装、卸载、管理依赖等） 使用 npm 安装插件npm install &amp;lt;name&amp;gt; [-g] [--save-dev]  –save-dev 是你开发时候依赖的东西，–save 是你发布之后还依赖的东西。举个栗子，jquery 是你开发用的，但是上限后依然依赖的。bab">
 
 
 
@@ -334,7 +334,10 @@
       
         <h2 id="npm-是什么"><a href="#npm-是什么" class="headerlink" title="npm 是什么"></a>npm 是什么</h2><p><a href="https://docs.npmjs.com/" target="_blank" rel="external"><strong>npm</strong></a>（node package manager）是<strong>nodejs</strong>的包管理器，用于node插件管理（包括安装、卸载、管理依赖等）</p>
 <h2 id="使用-npm-安装插件"><a href="#使用-npm-安装插件" class="headerlink" title="使用 npm 安装插件"></a>使用 npm 安装插件</h2><pre><code>npm install &lt;name&gt; [-g] [--save-dev]
-</code></pre><p><code>-g</code>：全局安装。<br>将会安装在C:\Users\Administrator\AppData\Roaming\npm，并且写入系统环境变量； 非全局安装：将会安装在当前定位目录； 全局安装可以通过命令行在任何地方调用它，本地安装将安装在定位目录的node_modules文件夹下，通过require()调用；</p>
+</code></pre><blockquote>
+<p>–save-dev 是你开发时候依赖的东西，–save 是你发布之后还依赖的东西。举个栗子，jquery 是你开发用的，但是上限后依然依赖的。babel 只是开发时候用来编译js的上线后就完全没用所以用 –save-dev</p>
+</blockquote>
+<p><code>-g</code>：全局安装。<br>将会安装在C:\Users\Administrator\AppData\Roaming\npm，并且写入系统环境变量； 非全局安装：将会安装在当前定位目录； 全局安装可以通过命令行在任何地方调用它，本地安装将安装在定位目录的node_modules文件夹下，通过require()调用；</p>
 <p><code>--save</code>：将保存配置信息至package.json（package.json是nodejs项目配置文件）；</p>
 <p><code>-dev</code>：保存至package.json的devDependencies节点，不指定-dev将保存至dependencies节点；</p>
 <blockquote>
@@ -478,7 +481,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -500,7 +503,7 @@
             
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">标签</span>
               
             </div>
