@@ -93,17 +93,17 @@
 
 
 
-<meta name="description" content="SQL 增删改查1234567891011121314151617181920212223242526272829303132333435363738394041424344create database [db_name];drop database [db_name];create table [tb_name] if not exists ();drop table [tb_name];//">
+<meta name="description" content="SQL 增删改查12345678910111213141516171819202122232425262728293031323334353637383940414243444546create database [db_name];drop database [db_name];create table [tb_name] if not exists ();drop table [tb_name">
 <meta name="keywords" content="sql">
 <meta property="og:type" content="article">
 <meta property="og:title" content="常用 sql 语句总结">
 <meta property="og:url" content="http://yoursite.com/2017/07/01/mysql-sql/index.html">
 <meta property="og:site_name" content="kuangggg&#39;s blog">
-<meta property="og:description" content="SQL 增删改查1234567891011121314151617181920212223242526272829303132333435363738394041424344create database [db_name];drop database [db_name];create table [tb_name] if not exists ();drop table [tb_name];//">
-<meta property="og:updated_time" content="2017-07-01T11:15:23.003Z">
+<meta property="og:description" content="SQL 增删改查12345678910111213141516171819202122232425262728293031323334353637383940414243444546create database [db_name];drop database [db_name];create table [tb_name] if not exists ();drop table [tb_name">
+<meta property="og:updated_time" content="2017-07-02T08:26:31.310Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="常用 sql 语句总结">
-<meta name="twitter:description" content="SQL 增删改查1234567891011121314151617181920212223242526272829303132333435363738394041424344create database [db_name];drop database [db_name];create table [tb_name] if not exists ();drop table [tb_name];//">
+<meta name="twitter:description" content="SQL 增删改查12345678910111213141516171819202122232425262728293031323334353637383940414243444546create database [db_name];drop database [db_name];create table [tb_name] if not exists ();drop table [tb_name">
 
 
 
@@ -332,13 +332,24 @@
       
 
       
-        <h2 id="SQL-增删改查"><a href="#SQL-增删改查" class="headerlink" title="SQL 增删改查"></a>SQL 增删改查</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">create database [db_name];</div><div class="line"></div><div class="line">drop database [db_name];</div><div class="line"></div><div class="line">create table [tb_name] if not exists (</div><div class="line">);</div><div class="line"></div><div class="line">drop table [tb_name];</div><div class="line"></div><div class="line"></div><div class="line">//查询</div><div class="line">select [field] from [tb_name];</div><div class="line">//去重</div><div class="line">select distinct [field] from [tb_name];</div><div class="line">//聚合函数</div><div class="line">select count([field]) from [tb_name];</div><div class="line">select * from [tb_name] limit [num];</div><div class="line"></div><div class="line"></div><div class="line">//批量插入</div><div class="line">insert into [tb_name] values (),();</div><div class="line"></div><div class="line"></div><div class="line">//更新</div><div class="line">update [tb_name] set [field] = [val];</div><div class="line">update [tb_name] set [field] = [val] where [field] = [val];</div><div class="line">update [tb_name] set [field] += [field];</div><div class="line"></div><div class="line"></div><div class="line">//删除表</div><div class="line">delete from [tb_name];</div><div class="line">//删除记录</div><div class="line">delete from [tb_name] where [];</div><div class="line"></div><div class="line"></div><div class="line">//排序</div><div class="line">select * from [tb_name] order by [field] [ASC [DESC]]</div><div class="line"></div><div class="line">//分组</div><div class="line">select * from [tb_name] group by [field]</div><div class="line"></div><div class="line">//left join/innder join/right join</div><div class="line">select [a.fields] from [tb_name] as a left join select [b.fields] on a.field = b.field</div></pre></td></tr></table></figure>
+        <h2 id="SQL-增删改查"><a href="#SQL-增删改查" class="headerlink" title="SQL 增删改查"></a>SQL 增删改查</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">create database [db_name];</div><div class="line"></div><div class="line">drop database [db_name];</div><div class="line"></div><div class="line">create table [tb_name] if not exists (</div><div class="line">);</div><div class="line"></div><div class="line">drop table [tb_name];</div><div class="line"></div><div class="line"></div><div class="line">//查询</div><div class="line">select [field] from [tb_name];</div><div class="line">//去重</div><div class="line">select distinct [field] from [tb_name];</div><div class="line">//聚合函数</div><div class="line">select count([field]) from [tb_name];</div><div class="line">select * from [tb_name] limit [num];</div><div class="line">//默认将 int 型转化为 Y-m-d H:i:s 格式,</div><div class="line">select from_unixtime(time, &apos;%Y-%m-%d&apos;) from [tb_name];</div><div class="line"></div><div class="line"></div><div class="line">//批量插入</div><div class="line">insert into [tb_name] values (),();</div><div class="line"></div><div class="line"></div><div class="line">//更新</div><div class="line">update [tb_name] set [field] = [val];</div><div class="line">update [tb_name] set [field] = [val] where [field] = [val];</div><div class="line">update [tb_name] set [field] += [field];</div><div class="line"></div><div class="line"></div><div class="line">//删除表</div><div class="line">delete from [tb_name];</div><div class="line">//删除记录</div><div class="line">delete from [tb_name] where [];</div><div class="line"></div><div class="line"></div><div class="line">//排序</div><div class="line">select * from [tb_name] order by [field] [ASC [DESC]]</div><div class="line"></div><div class="line">//分组</div><div class="line">select * from [tb_name] group by [field]</div><div class="line"></div><div class="line">//left join/innder join/right join</div><div class="line">select [a.fields] from [tb_name] as a left join select [b.fields] on a.field = b.field</div></pre></td></tr></table></figure>
 <h2 id="SQL-修改表结构"><a href="#SQL-修改表结构" class="headerlink" title="SQL 修改表结构"></a>SQL 修改表结构</h2><blockquote>
 <p>尽量在表设计之初就确定好结构，修改是下下策</p>
 </blockquote>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">//删除列</div><div class="line">alter table [tb_name] drop [field]</div><div class="line">//增加列</div><div class="line">alter table [tb_name] add [mail int not null comment '增加的列'];</div><div class="line">//修改列的类型信息</div><div class="line">alter table [tb_name] change [old_field] [mail int not null comment '新修改的列']</div><div class="line">//删除主键</div><div class="line">alter table [tb_name] drop primary key</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">//删除列</div><div class="line">alter table [tb_name] drop [field]</div><div class="line">//增加列</div><div class="line">alter table [tb_name] add [mail int not null comment &apos;增加的列&apos;];</div><div class="line">//修改列的类型信息</div><div class="line">alter table [tb_name] change [old_field] [mail int not null comment &apos;新修改的列&apos;]</div><div class="line">//删除主键</div><div class="line">alter table [tb_name] drop primary key</div></pre></td></tr></table></figure>
 <h2 id="表导入导出"><a href="#表导入导出" class="headerlink" title="表导入导出"></a>表导入导出</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">//导入</div><div class="line">mysql -uroot -pfanhougame --default-character-set=utf8 collect_data &lt; collect_data.sql</div><div class="line"></div><div class="line">// -d 只导出表结构</div><div class="line">mysqldump -uroot -pfanhougame -d statistic_data &gt; /tmp/statistic_data.sql</div></pre></td></tr></table></figure>
-<h2 id="杂项"><a href="#杂项" class="headerlink" title="杂项"></a>杂项</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">//查询负载过高语句</div><div class="line">show process</div><div class="line"></div><div class="line">//分析sql执行</div><div class="line">explain [sql]</div></pre></td></tr></table></figure>
+<h2 id="杂项"><a href="#杂项" class="headerlink" title="杂项"></a>杂项</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">//查询负载过高语句</div><div class="line">show process</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">//分析sql执行</div><div class="line">explain [sql]</div></pre></td></tr></table></figure>
+<ul>
+<li>table：显示这一行的数据是关于哪张表的</li>
+<li>type：这是重要的列，显示连接使用了何种类型。从最好到最差的连接类型为const、eq_reg、ref、range、 indexhe和ALL</li>
+<li>possible_keys：显示可能应用在这张表中的索引。如果为空，没有可能的索引。可以为相关的域从WHERE语句中选择一个合适的语句</li>
+<li>key： 实际使用的索引。如果为NULL，则没有使用索引。很少的情况下，MYSQL会选择优化不足的索引。这种情况下，可以在SELECT语句中使用USE         INDEX（indexname）来强制使用一个索引或者用IGNORE INDEX（indexname）来强制MYSQL忽略索引</li>
+<li>key_len：使用的索引的长度。在不损失精确性的情况下，长度越短越好</li>
+<li>ref：显示索引的哪一列被使用了，如果可能的话，是一个常数</li>
+<li>rows：MYSQL认为必须检查的用来返回请求数据的行数</li>
+<li>Extra：关于MYSQL如何解析查询的额外信息。坏的例子是Using temporary和Using filesort，意思MYSQL根本不能使用索引，结果是检索会很慢</li>
+</ul>
 
       
     </div>
@@ -390,6 +401,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/07/02/mysql-index/" rel="prev" title="mysql 索引使用指南">
+                mysql 索引使用指南 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -461,7 +476,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-count">11</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -483,7 +498,7 @@
             
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-count">13</span>
                 <span class="site-state-item-name">标签</span>
               
             </div>
