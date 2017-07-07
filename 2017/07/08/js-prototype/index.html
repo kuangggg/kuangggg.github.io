@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="kuan's blog" />
+  <meta name="keywords" content="js,prototype,__proto__," />
 
 
 
@@ -94,16 +94,17 @@
 
 
 <meta name="description" content="前言关于 __proto__ prototype constructor 的概念，网上有太多说辞，有些都上升到了哲学的地步，什么万物始于null,js 全是对象,鸡生蛋蛋生鸡。在我看来只是一千个读者眼中的哈姆雷特,要完全理解必须追根溯源。 弄清楚 js 中的数据类型 原始数据类型 数字 字符串 布尔 null undefined   对象数据类型 键值对的属性集合体。     原始值不可变，对象引">
+<meta name="keywords" content="js,prototype,__proto__">
 <meta property="og:type" content="article">
-<meta property="og:title" content="kuangggg&#39;s blog">
+<meta property="og:title" content="js 原型对象分析总结">
 <meta property="og:url" content="http://yoursite.com/2017/07/08/js-prototype/index.html">
 <meta property="og:site_name" content="kuangggg&#39;s blog">
 <meta property="og:description" content="前言关于 __proto__ prototype constructor 的概念，网上有太多说辞，有些都上升到了哲学的地步，什么万物始于null,js 全是对象,鸡生蛋蛋生鸡。在我看来只是一千个读者眼中的哈姆雷特,要完全理解必须追根溯源。 弄清楚 js 中的数据类型 原始数据类型 数字 字符串 布尔 null undefined   对象数据类型 键值对的属性集合体。     原始值不可变，对象引">
 <meta property="og:image" content="https://kuangggg.github.io/images/blog/170708/js-prototype.png">
 <meta property="og:image" content="https://kuangggg.github.io/images/blog/170708/1.png">
-<meta property="og:updated_time" content="2017-07-07T19:02:25.158Z">
+<meta property="og:updated_time" content="2017-07-07T19:14:35.525Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="kuangggg&#39;s blog">
+<meta name="twitter:title" content="js 原型对象分析总结">
 <meta name="twitter:description" content="前言关于 __proto__ prototype constructor 的概念，网上有太多说辞，有些都上升到了哲学的地步，什么万物始于null,js 全是对象,鸡生蛋蛋生鸡。在我看来只是一千个读者眼中的哈姆雷特,要完全理解必须追根溯源。 弄清楚 js 中的数据类型 原始数据类型 数字 字符串 布尔 null undefined   对象数据类型 键值对的属性集合体。     原始值不可变，对象引">
 <meta name="twitter:image" content="https://kuangggg.github.io/images/blog/170708/js-prototype.png">
 
@@ -139,7 +140,7 @@
 
 
 
-  <title> | kuangggg's blog</title>
+  <title>js 原型对象分析总结 | kuangggg's blog</title>
   
 
 
@@ -265,7 +266,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline"></h1>
+          <h1 class="post-title" itemprop="name headline">js 原型对象分析总结</h1>
         
 
         <div class="post-meta">
@@ -277,7 +278,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-08T01:05:40+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-08T11:03:24+08:00">
                 2017-07-08
               </time>
             
@@ -287,6 +288,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/js/" itemprop="url" rel="index">
+                    <span itemprop="name">js</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -339,12 +362,13 @@
 <h2 id="什么是原型"><a href="#什么是原型" class="headerlink" title="什么是原型"></a>什么是原型</h2><p>js 中每个对象(null 除外)都和另一个对象关联，这里的另一个对象就是她的原型，用来属性继承。</p>
 <h2 id="理解-constructor-和-prototype-proto-在构造函数创建对象中的关系"><a href="#理解-constructor-和-prototype-proto-在构造函数创建对象中的关系" class="headerlink" title="理解 constructor 和 prototype proto 在构造函数创建对象中的关系"></a>理解 constructor 和 prototype <strong>proto</strong> 在构造函数创建对象中的关系</h2><p><img src="https://kuangggg.github.io/images/blog/170708/js-prototype.png" alt="prototype"></p>
 <p>这里注意属性里存放地址的指向</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">F</span>(<span class="params"></span>)</span></div><div class="line">&#123;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">var</span> o = <span class="keyword">new</span> F();</div><div class="line"></div><div class="line">p(F.prototype === o.__proto__); <span class="comment">//true</span></div><div class="line">p(F.prototype.constructor === F); <span class="comment">//true</span></div></pre></td></tr></table></figure>
-<p>引用网上最流行的一张图分析<br><img src="https://kuangggg.github.io/images/blog/170708/1.png" alt="prototype"></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">F</span>(<span class="params"></span>)</span></div><div class="line">&#123;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">var</span> o = <span class="keyword">new</span> F();</div><div class="line"></div><div class="line">p(F.prototype === o.__proto__); <span class="comment">//true</span></div><div class="line">p(F.prototype.constructor === F); <span class="comment">//true</span></div><div class="line">p(F.__proto__ === <span class="built_in">Function</span>.prototype); <span class="comment">//true</span></div></pre></td></tr></table></figure>
+<p>引用网上最流行的一张图分析总结<br><img src="https://kuangggg.github.io/images/blog/170708/1.png" alt="prototype"></p>
 <ul>
 <li>对象都具有一个 <strong>proto</strong> 属性,指向构造该对象的 构造函数的 原型</li>
 <li>构造函数除了 <strong>proto</strong> 外还包含 一个原型属性 prototype,指向一个对象，这个对象称为原型对象</li>
 <li>原型对象中有个属性 constructor ,又指会到构造函数</li>
+<li>原型对象也是对象，他的 <strong>proto</strong> 指向它的构造函数的原型对象 Object.prototype</li>
 </ul>
 
       
@@ -372,6 +396,16 @@
     </div>
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/js/" rel="tag"># js</a>
+          
+            <a href="/tags/prototype/" rel="tag"># prototype</a>
+          
+            <a href="/tags/proto/" rel="tag"># __proto__</a>
+          
+        </div>
       
 
       
@@ -484,7 +518,7 @@
             
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-count">15</span>
                 <span class="site-state-item-name">标签</span>
               
             </div>
